@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import TicketCard from './components/TicketCard';
 import TaskStatus from './components/TaskStatus';
+import Footer from './components/Footer';
 import ticketsData from './data/tickets.json';
 import './App.css';
 
@@ -56,6 +57,7 @@ function App() {
           onComplete={handleComplete}
         />
       </main>
+      <Footer></Footer>
     </>
   );
 }
