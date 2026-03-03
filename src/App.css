@@ -140,3 +140,209 @@ body {
   font-weight: 700;
   line-height: 1;
 }
+
+/* ===== MAIN SECTION ===== */
+.main-section {
+  display: flex;
+  gap: 24px;
+  padding: 56px 40px 40px;
+  align-items: stretch;
+}
+
+.tickets-panel {
+  flex: 2;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ===== TICKET CARD ===== */
+.ticket-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ticket-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.ticket-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.ticket-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+  flex: 1;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.status-open {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.status-inprogress {
+  background-color: #fef9c3;
+  color: #ca8a04;
+}
+
+.ticket-description {
+  font-size: 0.82rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.ticket-card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  font-size: 0.78rem;
+}
+
+.ticket-id {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.priority-badge {
+  font-weight: 700;
+  font-size: 0.72rem;
+}
+
+.priority-high { color: #ef4444; }
+.priority-medium { color: #f97316; }
+.priority-low { color: #3b82f6; }
+
+.ticket-customer {
+  color: #374151;
+  margin-left: auto;
+}
+
+.ticket-date {
+  color: #6b7280;
+}
+
+/* ===== TASK STATUS PANEL ===== */
+.task-status-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+  min-width: 280px;
+}
+
+.task-status-section,
+.resolved-section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.task-status-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.task-status-empty {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.task-status-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-status-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.task-status-item:last-child {
+  border-bottom: none;
+}
+
+.task-status-title {
+  font-size: 0.875rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+.btn-complete {
+  width: 100%;
+  background-color: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-complete:hover {
+  background-color: #15803d;
+}
+
+.resolved-item .task-status-title {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.resolved-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #16a34a;
+  background-color: #dcfce7;
+  padding: 3px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
