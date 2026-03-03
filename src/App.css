@@ -52,7 +52,8 @@ body {
   gap: 28px;
 }
 
-.navbar-links li a {
+.navbar-links li a,
+.navbar-links li a:visited {
   text-decoration: none;
   font-size: 0.9rem;
   color: #374151;
@@ -79,4 +80,63 @@ body {
 
 .btn-new-ticket:hover {
   background-color: #6d28d9;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  display: flex;
+  gap: 20px;
+  margin: 32px 40px;
+}
+
+.banner-card {
+  flex: 1;
+  position: relative;
+  padding: 48px;
+  overflow: hidden;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.banner-card-purple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #5b21b6 100%);
+}
+
+.banner-card-green {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #047857 100%);
+}
+
+.banner-vector {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+  pointer-events: none;
+  user-select: none;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.banner-label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.banner-count {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
 }
